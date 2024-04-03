@@ -1,0 +1,38 @@
+.form-input{
+  height: 35px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.common-form{
+  text-align: center;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  width: 300px;
+}
+
+.add-product{
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form-button{
+  height: 35px;
+  cursor: pointer;
+  width:130px;
+  margin-left: 80px;
+}
+
+.product-message{
+  color:green;
+  font-weight: 500;
+
+}
+

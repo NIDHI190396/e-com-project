@@ -1,0 +1,31 @@
+<mat-toolbar color="primary">
+
+  <h1><a routerLink="/">E-Comm</a></h1>&nbsp;
+  <span *ngIf="menuType === 'default'" class="example-spacer">
+    <input #searchInput
+    type="text" class="input-box" placeholder="Search Product"/>&nbsp;
+
+    <button class="form-button">Search</button>
+    <ul class="suggested-result" *ngIf="searchResult">
+      <li *ngFor="let item of filteredProducts">
+        <a>{{item.name}}</a>
+      </li>
+    </ul>
+  </span>
+
+<div [ngSwitch]="menuType">
+  <mat-list role="list" class="inline-list" *ngSwitchCase="'default'">
+    <mat-list-item role="listitem" class="list-item" routerLink="/seller-auth"><span class="item">Seller</span></mat-list-item>
+    <mat-list-item role="listitem" class="list-item" routerLink="/"><span class="item">Home</span></mat-list-item>
+    <mat-list-item role="listitem" class="list-item"><span class="item">Login</span></mat-list-item>
+    <mat-list-item role="listitem" class="list-item"><span class="item">Cart(0)</span></mat-list-item>
+  </mat-list>
+
+  <mat-list role="list" class="inline-list" *ngSwitchCase="'seller'">
+    <mat-list-item role="listitem" class="list-item" routerLink="/seller-home"><span class="item">Product List</span></mat-list-item>
+    <mat-list-item role="listitem" class="list-item" routerLink="/seller-add-product"><span class="item">Add Product</span></mat-list-item>
+    <mat-list-item role="listitem" class="list-item" (click)="logout()"><span class="item">Logout</span></mat-list-item>
+    <mat-list-item role="listitem" class="list-item"><span class="item">{{sellerName | titlecase}}</span></mat-list-item>
+  </mat-list>
+</div>
+</mat-toolbar>

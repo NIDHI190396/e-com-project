@@ -1,0 +1,31 @@
+.form-input{
+  height: 35px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.common-form{
+  text-align: center;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  width: 300px;
+}
+
+.update-product{
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.product-message{
+  color:green;
+  font-weight: 500;
+}
+
+

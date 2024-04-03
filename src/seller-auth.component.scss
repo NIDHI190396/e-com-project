@@ -1,0 +1,41 @@
+.signup, .login{
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 80px;
+
+}
+
+.common-form{
+  text-align: center;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  width: 300px;
+}
+
+.form-input{
+  height: 35px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.form-button{
+  height: 35px;
+  cursor: pointer;
+  width:100px;
+  margin-left: 100px;
+}
+
+.auth-toggle-link{
+  margin-top: 20px;
+  color: rgb(7, 7, 169);
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.error-p{
+  color: rgb(230, 19, 19);
+}
